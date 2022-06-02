@@ -30,6 +30,16 @@
     border-radius: 100%;
     position: relative;
     top: 16%;
+    animation: yyy 2s linear 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes yyy{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .child:nth-child(1){
     flex-grow: 1;
@@ -72,8 +82,8 @@
 }
 .flex p{
     width: 40%;
+    margin-left: 30px;
     position: relative;
-    left: 10%;
     bottom: -8vh;
     transition: 1s linear 0s;
 }
@@ -81,8 +91,7 @@
     transform: scale(1.1);
 }
 .write h1{
-    position: relative;
-    left: 45%;
+    text-align: center;
     transition: 1s linear 0s;
 }
 .write h1:hover{
@@ -115,7 +124,7 @@
 }
 .right button{
     padding: 6px 8px;
-    background: green;
-    color: white;
+    background: white;
+    color: green;
     border: none;
 }
